@@ -23,3 +23,7 @@ print(t_ds["label"][:10])
 shuffled = t_ds.shuffle(seed=1)
 print(shuffled["label"][:10])
 # [1, 1, 1, 1, 0, 1, 1, 1, 0, 0]
+
+# 切分为训练和测试集
+splited = t_ds.train_test_split(test_size=0.1)
+print(splited)
